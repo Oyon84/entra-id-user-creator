@@ -1,0 +1,29 @@
+{
+  "name": "entra-id-user-creator",
+  "version": "1.0.0",
+  "description": "Create users in Entra ID tenant using Microsoft Graph API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oyon84/entra-id-user-creator.git"
+  },
+  "keywords": [
+    "entraID",
+    "azure",
+    "node"
+  ],
+  "author": "Christiaan Verschoor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oyon84/entra-id-user-creator/issues"
+  },
+  "homepage": "https://github.com/Oyon84/entra-id-user-creator#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
+  }
+}
