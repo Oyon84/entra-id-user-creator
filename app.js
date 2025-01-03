@@ -8,11 +8,11 @@ const app = express();
 app.use(bodyParser.json());
 
 // Configuration
-const PORT = 3000;
-const CLIENT_ID = 'your-client-id'; // Replace with your Azure App Client ID
-const CLIENT_SECRET = 'your-client-secret'; // Replace with your Azure App Client Secret
-const TENANT_ID = 'your-tenant-id'; // Replace with your Azure Tenant ID
-const GRAPH_API_URL = 'https://graph.microsoft.com/v1.0';
+const PORT = process.env.PORT || 3000;
+const CLIENT_ID = process.env.CLIENT_ID;
+const CLIENT_SECRET = process.env.CLIENT_SECRET;
+const TENANT_ID = process.env.TENANT_ID;
+const GRAPH_API_URL = process.env.GRAPH_API_URL || `https://graph.microsoft.com/v1.0`;
 
 // Function to get access token from Microsoft
 async function getAccessToken() {
